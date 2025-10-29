@@ -30,6 +30,35 @@ Es una aplicacion de escritorio desarrollada en Python que permite gestionar y l
 - Al iniciar la aplicacion, se mostrara la interfaz principal donde podras acceder a las diferentes secciones como registro de reparaciones, gestion de vehiculos e inventario de partes.
 - Utiliza los formularios proporcionados para ingresar nueva informacion o actualizar la existente.
 - Navega a traves de los menus para generar reportes y visualizar estadisticas.
+## Estructura del proyecto
+```bash
+taller_mecanico/
+│
+├── main.py                            # Ejecuta la app (usa TallerApp)
+│
+├── data/
+│   ├── database.sql                   # Tu script SQL original
+│   └── db_manager.py                  # Conexión y creación automática de tablas
+│
+├── domain/                            # Capa de negocio (entidades, lógica)
+│   └── cliente_entity.py
+│
+├── repositories/                      # Capa de datos (consultas SQL)
+│   └── cliente_repository.py
+│
+├── services/                          # Capa de aplicación (coordinación entre repo y vista)
+│   └── cliente_service.py
+│
+├── ui/                                # Capa de presentación
+│   ├── app_main.py                    # Tu clase TallerApp adaptada
+│   ├── views/
+│   │   └── cliente_view.py            # Pantalla de gestión de clientes
+│   └── assets/icons/                  # Íconos
+│
+└── config/
+    └── colors.py
+```
+
 ## Contribuciones
 Las contribuciones son bienvenidas! Si deseas mejorar esta aplicacion, por favor sigue estos pasos:
 1. Haz un fork de este repositorio.
