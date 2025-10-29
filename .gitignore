@@ -1,0 +1,71 @@
+# Ignorar archivos generados por Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+0
+# Entornos virtuales y archivos de entorno
+.env
+.env.*
+venv/
+ENV/
+env/
+.venv/
+pip-wheel-metadata/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribución / empaquetado / builds
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+wheels/
+share/python-wheels/
+
+# Pruebas / cobertura
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*,cover
+
+# Archivos de configuración locales / bases de datos
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# PyInstaller
+*.spec
+
+# IDEs y editores
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.cache
+*.VC.db
+*.VC.opendb
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
